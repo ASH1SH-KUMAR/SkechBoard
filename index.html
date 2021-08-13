@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhiteBoard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="tools-container">
+        <div class="tool-div">
+            <div id="pencil" class="tools">
+                <img src="https://raw.githubusercontent.com/sushberiwal/Dev_PP_11/6d436b45ebbb00ecde06aa9ba364c374e0ab3a49/Module2/WhiteBoard/activity/NewIcons/Black_Pencil.svg" alt="">
+                <div class="pencil-options hide">
+                    <input type="range" value = "2" min = "1" max = "20" class="pencil-size">
+                    <div class="pencil-colors">
+                        <div class="black"></div>
+                        <div class="red"></div>
+                        <div class="green"></div>
+                        <div class="yellow"></div>
+                        <div class="blue"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="eraser" class="tools fade">
+                <img src="https://raw.githubusercontent.com/sushberiwal/Dev_PP_11/6d436b45ebbb00ecde06aa9ba364c374e0ab3a49/Module2/WhiteBoard/activity/NewIcons/Eraser.svg" alt="">
+                <div class="eraser-option hide">
+                    <input type="range" value = "2" min = "1" max = "30" class="eraser-size">
+                </div>
+            </div>
+            <div id="undo" class="tools"><img src="https://raw.githubusercontent.com/sushberiwal/Dev_PP_11/6d436b45ebbb00ecde06aa9ba364c374e0ab3a49/Module2/WhiteBoard/activity/NewIcons/Undo.svg" alt=""></div>
+            <div id="redo" class="tools"><img src="https://raw.githubusercontent.com/sushberiwal/Dev_PP_11/6d436b45ebbb00ecde06aa9ba364c374e0ab3a49/Module2/WhiteBoard/activity/NewIcons/Redo.svg" alt=""></div>
+            <div id="sticky" class="tools"><img src="https://raw.githubusercontent.com/sushberiwal/Dev_PP_11/6d436b45ebbb00ecde06aa9ba364c374e0ab3a49/Module2/WhiteBoard/activity/NewIcons/StickyNote.svg" alt=""></div>
+            <div id="image" class="tools"><img src="https://raw.githubusercontent.com/sushberiwal/Dev_PP_11/6d436b45ebbb00ecde06aa9ba364c374e0ab3a49/Module2/WhiteBoard/activity/NewIcons/Photo.svg" alt=""><input type="file" id="image-upload" class="hide"></div>
+            <div id="download" class="tools"><img src="https://raw.githubusercontent.com/sushberiwal/Dev_PP_11/6d436b45ebbb00ecde06aa9ba364c374e0ab3a49/Module2/WhiteBoard/activity/NewIcons/Download.svg" alt=""></div>
+
+        </div>
+    </div>
+    <div class="drawing-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./tools.js"></script>
+    <script src="./db.js"></script>
+</body>
+
+</html>

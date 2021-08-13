@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+}
+
+.tools-container {
+    height: 60px;
+    /* background: rgb(171, 173, 172); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tool-div {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 15%, rgba(148, 187, 233, -0.7) 100%);
+}
+
+.tools {
+    height: 55%;
+    width: 10%;
+}
+
+.tools img {
+    height: 100%;
+    width: 100%;
+}
+
+.drawing-container {}
+
+#canvas {
+    background-color: rgb(255, 255, 255);
+}
+
+.sticky-note {
+    height: 210px;
+    width: 240px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+    position: absolute;
+    top: 200px;
+    left: 470px;
+}
+
+.sticky-header {
+    height: 10%;
+    width: 100%;
+    background: cadetblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sticky-content {
+    height: 90%;
+    width: 100%;
+    background: lightcyan;
+    display: block;
+    outline: none;
+    padding: 5px
+}
+
+.fas {
+    margin: 4px;
+}
+
+#image {}
+
+.sticky-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pencil-options {
+    display: block;
+    padding: 5px;
+    height: 80px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: -40px;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 15%, rgba(148, 187, 233, -0.7) 100%);
+}
+
+.pencil-size {
+    width: 95%;
+}
+
+.eraser-size {
+    width: 95%;
+}
+
+.eraser-option {
+    display: block;
+    padding: 5px;
+    height: 80px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: -20px;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 15%, rgba(148, 187, 233, -0.7) 100%);
+}
+
+.hide {
+    display: none;
+}
+
+.black {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.red {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.yellow {
+    height: 15px;
+    width: 15px;
+    background-color: yellow;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.green {
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.blue {
+    height: 15px;
+    width: 15px;
+    background-color: blue;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.pencil-colors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fade{
+opacity: 0.4;
+}
